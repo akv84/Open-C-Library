@@ -15,13 +15,7 @@
 Icon?
 Thumbs.db
 .cache
-.project
-.settings
 .tmproj
-*.esproj
-nbproject
-*.sublime-project
-*.sublime-workspace
 
 # Dreamweaver added files
 _notes
