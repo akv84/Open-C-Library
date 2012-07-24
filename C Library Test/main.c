@@ -8,10 +8,14 @@
 
 #include <stdio.h>
 #include "MathematicsTEST.h"
-int main (int argc, const char * argv[])
-{
-    printf("Hello, World!\nTesting...\n\n");
-    MathematicsTEST();
-    printf("Test Completed");
-    return 0;
+#include "SortTEST.h"
+#include "ParserTEST.h"
+
+int main(int argc, const char * argv[]) {
+	printf("Test Started...\n\n");
+	MathematicsTEST();
+	SortTEST();
+	ParseTEST();
+	printf("\n\nTest Completed\n\n");
+	return 0;
 }
