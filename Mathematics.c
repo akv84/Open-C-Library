@@ -42,7 +42,8 @@ int lcm2s(int num1,int num2) {
 
 int lcm(int a[],int n){
     int lcm = a[0];
-    for(int i=1;i<n;i++)
+    int i;
+    for(i=1;i<n;i++)
         lcm = lcm2(lcm, a[i]);
     return lcm;
 }

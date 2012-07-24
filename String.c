@@ -9,10 +9,10 @@
 #include<string.h>
 
 int findWord(char* str, char *word){
-    int i=0,k=-1,flag=1;
+    int i=0,j,k=-1,flag=1;
     for (;str[i]&&k==-1;i++,flag=1)
         if(str[i]==word[0]&&(i==0||str[i-1])&&(i+strlen(word)==strlen(str)||(i+strlen(word)<strlen(str)&&(str[i+strlen(word)]==' ')))){
-            for (int j=0; j<strlen(word); j++)
+            for (j=0; j<strlen(word); j++)
                 if (str[i+j]!=word[j]) {
                     flag=0;
                     break;

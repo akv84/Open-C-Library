@@ -19,6 +19,14 @@
 		B8C9D46A1446286C00E0501B /* C_Library_Test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8C9D4691446286C00E0501B /* C_Library_Test.1 */; };
 		B8C9D46E1446300C00E0501B /* Matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = B82C3696142CC6A00062C989 /* Matrix.c */; };
 		B8C9D46F1446301300E0501B /* Mathematics.c in Sources */ = {isa = PBXBuildFile; fileRef = B87B1560142C78B20070D39C /* Mathematics.c */; };
+		B8CA3E7115BE7E2200BF785B /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = B8CA3E7015BE7E2200BF785B /* Sort.c */; };
+		B8CA3E7215BE7E2200BF785B /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = B8CA3E7015BE7E2200BF785B /* Sort.c */; };
+		B8CA3E7515BE7E4500BF785B /* Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = B8CA3E7415BE7E4500BF785B /* Sort.h */; };
+		B8CA3E7815BE887000BF785B /* SortTEST.c in Sources */ = {isa = PBXBuildFile; fileRef = B8CA3E7715BE887000BF785B /* SortTEST.c */; };
+		B8DE1DA815BEFEEE003E7F92 /* Parser.c in Sources */ = {isa = PBXBuildFile; fileRef = B8DE1DA715BEFEEE003E7F92 /* Parser.c */; };
+		B8DE1DA915BEFEEE003E7F92 /* Parser.c in Sources */ = {isa = PBXBuildFile; fileRef = B8DE1DA715BEFEEE003E7F92 /* Parser.c */; };
+		B8DE1DAC15BEFF06003E7F92 /* Parser.h in Headers */ = {isa = PBXBuildFile; fileRef = B8DE1DAB15BEFF06003E7F92 /* Parser.h */; };
+		B8DE1DAF15BEFF42003E7F92 /* ParserTEST.c in Sources */ = {isa = PBXBuildFile; fileRef = B8DE1DAE15BEFF42003E7F92 /* ParserTEST.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +55,14 @@
 		B8C9D4641446286C00E0501B /* C Library Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C Library Test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C9D4671446286C00E0501B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B8C9D4691446286C00E0501B /* C_Library_Test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = C_Library_Test.1; sourceTree = "<group>"; };
+		B8CA3E7015BE7E2200BF785B /* Sort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
+		B8CA3E7415BE7E4500BF785B /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		B8CA3E7615BE885E00BF785B /* SortTEST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SortTEST.h; sourceTree = "<group>"; };
+		B8CA3E7715BE887000BF785B /* SortTEST.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SortTEST.c; sourceTree = "<group>"; };
+		B8DE1DA715BEFEEE003E7F92 /* Parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Parser.c; sourceTree = "<group>"; };
+		B8DE1DAB15BEFF06003E7F92 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		B8DE1DAD15BEFF30003E7F92 /* ParserTEST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserTEST.h; sourceTree = "<group>"; };
+		B8DE1DAE15BEFF42003E7F92 /* ParserTEST.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ParserTEST.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +105,15 @@
 			isa = PBXGroup;
 			children = (
 				B87B1560142C78B20070D39C /* Mathematics.c */,
+				B841105A144EE16C00961ABA /* Mathematics.h */,
 				B82C3696142CC6A00062C989 /* Matrix.c */,
+				B8411058144EE14700961ABA /* Matrix.h */,
+				B8DE1DA715BEFEEE003E7F92 /* Parser.c */,
+				B8DE1DAB15BEFF06003E7F92 /* Parser.h */,
+				B8CA3E7015BE7E2200BF785B /* Sort.c */,
+				B8CA3E7415BE7E4500BF785B /* Sort.h */,
 				B8411052144EE08F00961ABA /* String.c */,
 				B8411055144EE0F400961ABA /* String.h */,
-				B8411058144EE14700961ABA /* Matrix.h */,
-				B841105A144EE16C00961ABA /* Mathematics.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -101,10 +121,14 @@
 		B8C9D4661446286C00E0501B /* C Library Test */ = {
 			isa = PBXGroup;
 			children = (
+				B8C9D4691446286C00E0501B /* C_Library_Test.1 */,
 				B8C9D4671446286C00E0501B /* main.c */,
 				B8610021145C2424002462CD /* MathematicsTEST.c */,
 				B820985E145C25A200716F55 /* MathematicsTEST.h */,
-				B8C9D4691446286C00E0501B /* C_Library_Test.1 */,
+				B8CA3E7715BE887000BF785B /* SortTEST.c */,
+				B8CA3E7615BE885E00BF785B /* SortTEST.h */,
+				B8DE1DAD15BEFF30003E7F92 /* ParserTEST.h */,
+				B8DE1DAE15BEFF42003E7F92 /* ParserTEST.c */,
 			);
 			path = "C Library Test";
 			sourceTree = "<group>";
@@ -119,6 +143,8 @@
 				B8411056144EE0F400961ABA /* String.h in Headers */,
 				B8411059144EE14700961ABA /* Matrix.h in Headers */,
 				B841105B144EE16C00961ABA /* Mathematics.h in Headers */,
+				B8CA3E7515BE7E4500BF785B /* Sort.h in Headers */,
+				B8DE1DAC15BEFF06003E7F92 /* Parser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +219,8 @@
 				B87B1561142C78B20070D39C /* Mathematics.c in Sources */,
 				B82C3697142CC6A00062C989 /* Matrix.c in Sources */,
 				B8411053144EE08F00961ABA /* String.c in Sources */,
+				B8CA3E7115BE7E2200BF785B /* Sort.c in Sources */,
+				B8DE1DA815BEFEEE003E7F92 /* Parser.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +233,10 @@
 				B8C9D46F1446301300E0501B /* Mathematics.c in Sources */,
 				B8411057144EE0FD00961ABA /* String.c in Sources */,
 				B8610022145C2424002462CD /* MathematicsTEST.c in Sources */,
+				B8CA3E7215BE7E2200BF785B /* Sort.c in Sources */,
+				B8CA3E7815BE887000BF785B /* SortTEST.c in Sources */,
+				B8DE1DA915BEFEEE003E7F92 /* Parser.c in Sources */,
+				B8DE1DAF15BEFF42003E7F92 /* ParserTEST.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

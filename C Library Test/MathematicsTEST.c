@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include <assert.h>
-#include "Mathematics.h"
+#include "../Mathematics.h"
 #include "MathematicsTEST.h"
 
 
