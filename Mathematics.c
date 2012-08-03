@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <math.h>
 #include "Mathematics.h"
 
 int lcm2(int num1,int num2) {
@@ -140,4 +141,35 @@ int revnum(int n) {
         n/=10;
     }
     return rev;
+}
+
+//This is a WIP Converts a Hexadecimal into a decimal
+int hexConvertdec(int number) {
+    int power=0,r1,r2,r3,final;
+    int A = number / 100;
+    int B = (number % 100) / 10;
+    int C = (number % 100) % 10;
+    /*DEBUG PURPOUSES:printf("%d , %d , %d\n",A,B,C); */
+    
+    r1 = C * 1;
+    r2 = B * 16;
+    r3 = A * 256;
+    //TODO: take r4 and D so i can have 4 digit hexs
+    final = r1 + r2 + r3;
+    
+    /*DEBUG PURPOUSES:printf("0x%03d = %d in decimal!",number,final);*/
+    return final;
+}
+float interestCompound(float c,float r,float n,float time) {
+    float p=0.0; //is the future value (return value)
+    float ex = n*time; 
+    
+    p = pow((1.0 + (r/n)),ex);
+    return p *= c;
+}
+float interestContinuous(float c,float r,float time) { //Accurate to about 10 decimal places
+    double EC = 2.718281828469;
+    float p=0.0; //is the future value (return value)
+    float ex = r*time;
+    return p = c * (pow((double)EC,ex));
 }
