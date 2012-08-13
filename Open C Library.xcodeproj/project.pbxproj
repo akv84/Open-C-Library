@@ -15,6 +15,10 @@
 		B841105B144EE16C00961ABA /* Mathematics.h in Headers */ = {isa = PBXBuildFile; fileRef = B841105A144EE16C00961ABA /* Mathematics.h */; settings = {ATTRIBUTES = (); }; };
 		B8610022145C2424002462CD /* MathematicsTEST.c in Sources */ = {isa = PBXBuildFile; fileRef = B8610021145C2424002462CD /* MathematicsTEST.c */; };
 		B87B1561142C78B20070D39C /* Mathematics.c in Sources */ = {isa = PBXBuildFile; fileRef = B87B1560142C78B20070D39C /* Mathematics.c */; };
+		B8861EF915CE5E31007685E2 /* MatrixTEST.c in Sources */ = {isa = PBXBuildFile; fileRef = B8861EF815CE5E31007685E2 /* MatrixTEST.c */; };
+		B89ED6EE15CC0F90000CB408 /* DataStructure.h in Headers */ = {isa = PBXBuildFile; fileRef = B89ED6ED15CC0F90000CB408 /* DataStructure.h */; };
+		B89ED6F115CC0FA5000CB408 /* DataStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = B89ED6F015CC0FA5000CB408 /* DataStructure.c */; };
+		B89ED6F215CC0FA5000CB408 /* DataStructure.c in Sources */ = {isa = PBXBuildFile; fileRef = B89ED6F015CC0FA5000CB408 /* DataStructure.c */; };
 		B8C9D4681446286C00E0501B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = B8C9D4671446286C00E0501B /* main.c */; };
 		B8C9D46A1446286C00E0501B /* C_Library_Test.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = B8C9D4691446286C00E0501B /* C_Library_Test.1 */; };
 		B8C9D46E1446300C00E0501B /* Matrix.c in Sources */ = {isa = PBXBuildFile; fileRef = B82C3696142CC6A00062C989 /* Matrix.c */; };
@@ -52,6 +56,10 @@
 		B84EDC86142C759E00B970A3 /* libOpen C Library.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libOpen C Library.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8610021145C2424002462CD /* MathematicsTEST.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MathematicsTEST.c; sourceTree = "<group>"; };
 		B87B1560142C78B20070D39C /* Mathematics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Mathematics.c; sourceTree = "<group>"; };
+		B8861EF815CE5E31007685E2 /* MatrixTEST.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MatrixTEST.c; sourceTree = "<group>"; };
+		B8861EFB15CE5E4E007685E2 /* MatrixTEST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTEST.h; sourceTree = "<group>"; };
+		B89ED6ED15CC0F90000CB408 /* DataStructure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataStructure.h; sourceTree = "<group>"; };
+		B89ED6F015CC0FA5000CB408 /* DataStructure.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = DataStructure.c; sourceTree = "<group>"; };
 		B8C9D4641446286C00E0501B /* C Library Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C Library Test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C9D4671446286C00E0501B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		B8C9D4691446286C00E0501B /* C_Library_Test.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = C_Library_Test.1; sourceTree = "<group>"; };
@@ -114,6 +122,8 @@
 				B8CA3E7415BE7E4500BF785B /* Sort.h */,
 				B8411052144EE08F00961ABA /* String.c */,
 				B8411055144EE0F400961ABA /* String.h */,
+				B89ED6ED15CC0F90000CB408 /* DataStructure.h */,
+				B89ED6F015CC0FA5000CB408 /* DataStructure.c */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -129,6 +139,8 @@
 				B8CA3E7615BE885E00BF785B /* SortTEST.h */,
 				B8DE1DAD15BEFF30003E7F92 /* ParserTEST.h */,
 				B8DE1DAE15BEFF42003E7F92 /* ParserTEST.c */,
+				B8861EF815CE5E31007685E2 /* MatrixTEST.c */,
+				B8861EFB15CE5E4E007685E2 /* MatrixTEST.h */,
 			);
 			path = "C Library Test";
 			sourceTree = "<group>";
@@ -145,6 +157,7 @@
 				B841105B144EE16C00961ABA /* Mathematics.h in Headers */,
 				B8CA3E7515BE7E4500BF785B /* Sort.h in Headers */,
 				B8DE1DAC15BEFF06003E7F92 /* Parser.h in Headers */,
+				B89ED6EE15CC0F90000CB408 /* DataStructure.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +234,7 @@
 				B8411053144EE08F00961ABA /* String.c in Sources */,
 				B8CA3E7115BE7E2200BF785B /* Sort.c in Sources */,
 				B8DE1DA815BEFEEE003E7F92 /* Parser.c in Sources */,
+				B89ED6F115CC0FA5000CB408 /* DataStructure.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +251,8 @@
 				B8CA3E7815BE887000BF785B /* SortTEST.c in Sources */,
 				B8DE1DA915BEFEEE003E7F92 /* Parser.c in Sources */,
 				B8DE1DAF15BEFF42003E7F92 /* ParserTEST.c in Sources */,
+				B89ED6F215CC0FA5000CB408 /* DataStructure.c in Sources */,
+				B8861EF915CE5E31007685E2 /* MatrixTEST.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

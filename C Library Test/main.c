@@ -3,19 +3,20 @@
 //  C Library Test
 //
 //  Created by Abhishek Munie on 13/10/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #include <stdio.h>
 #include "MathematicsTEST.h"
-#include "SortTEST.h"
+#include "MatrixTEST.h"
 #include "ParserTEST.h"
+#include "SortTEST.h"
 
 int main(int argc, const char * argv[]) {
 	printf("Test Started...\n\n");
 	MathematicsTEST();
-	SortTEST();
+    MatrixTEST();
 	ParseTEST();
+	SortTEST();
 	printf("\n\nTest Completed\n\n");
 	return 0;
 }

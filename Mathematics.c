@@ -11,6 +11,27 @@
 #include <math.h>
 #include "Mathematics.h"
 
+const struct UniversalConstant _UniversalConstants = {
+    /*Pi =*/ 3.1415926535897932384626433832795,
+    /*g =*/ 9.80665,
+    /*L =*/ 6.02214199e23,
+    /*k =*/ 1.3806503e-23,
+    /*e_o =*/ 8.85418781762e-12,
+    /*e =*/ 1.602176462e-19,
+    /*m_e =*/ 9.10938188e-31,
+    /*F =*/ 9.6485309e4,
+    /*R =*/ 8.314472,
+    /*G =*/ 6.67259e-11,
+    /*N_L =*/ 2.686763e25,
+    /*mu_o =*/ 4*3.1415926535897932384626433832795e-7,
+    /*h =*/ 6.6260755e-34,
+    /*m_n =*/ 1.6749286e-27,
+    /*m_p =*/ 1.6726231e-27,
+    /*c =*/ 229792458,
+    /*sigma =*/ 5.67051e-8,
+    /*r_o =*/ 1.414e-15,
+};
+
 int lcm2(int num1,int num2) {
     int lcm = 1, i=2;
     while (num1!=1||num2!=1) {
@@ -25,6 +46,7 @@ int lcm2(int num1,int num2) {
         if (num1%i&&num2%i)
             i++;
     }
+    
     return lcm;
 }
 
@@ -137,14 +159,14 @@ char *getDivide(long dividend, long divisor, unsigned long decimalPlace) {
 int revnum(int n) {
     int rev = 0;
     while (n) {
-        rev = (rev*10) + (n%10);
-        n/=10;
+        rev = (rev * 10) + (n % 10);
+        n /= 10;
     }
     return rev;
 }
 
 //This is a WIP Converts a Hexadecimal into a decimal
-int hexConvertdec(int number) {
+int HEXtoDEC(int number) {
     int power=0,r1,r2,r3,final;
     int A = number / 100;
     int B = (number % 100) / 10;
@@ -160,10 +182,10 @@ int hexConvertdec(int number) {
     /*DEBUG PURPOUSES:printf("0x%03d = %d in decimal!",number,final);*/
     return final;
 }
+
 float interestCompound(float c,float r,float n,float time) {
     float p=0.0; //is the future value (return value)
-    float ex = n*time; 
-    
+    float ex = n*time;
     p = pow((1.0 + (r/n)),ex);
     return p *= c;
 }

@@ -3,7 +3,6 @@
 //  Open C Library
 //
 //  Created by Abhishek Munie on 19/10/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
 #ifndef Open_C_Library_String_h
